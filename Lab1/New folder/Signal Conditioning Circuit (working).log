@@ -1,0 +1,69 @@
+Circuit: * C:\Users\PC\Dropbox\ELEC3400 LTSpice\Prac1\Signal Conditioning Circuit (working).asc
+
+Early termination of direct N-R iteration.
+Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
+Starting Gmin stepping
+Gmin = 10
+vernier = 0.5
+vernier = 0.25
+vernier = 0.125
+Gmin = 5.5165
+vernier = 0.0625
+vernier = 0.03125
+vernier = 0.015625
+vernier = 0.0078125
+Gmin = 5.49501
+vernier = 0.00390625
+vernier = 0.00195313
+vernier = 0.000976563
+vernier = 0.000488281
+Gmin = 5.50104
+Gmin = 0
+Gmin stepping failed
+
+Starting source stepping with srcstepmethod=0
+Source Step = 3.0303%
+Source Step = 33.3333%
+Source Step = 63.6364%
+Source Step = 93.9394%
+Source Step = 97.1591%
+Source Step = 98.2955%
+Source Step = 98.7689%
+Source Step = 99.1241%
+Source Step = 99.2424%
+Source Step = 99.3608%
+Source Step = 99.4792%
+Source Step = 99.5679%
+Source Step = 99.5975%
+Source Step = 99.6271%
+Source Step = 99.6567%
+Source Step = 99.6863%
+vernier = 0.00146484
+Source Step = 99.7174%
+Source Step = 99.7618%
+Source Step = 99.8062%
+Source Step = 99.8506%
+Source Step = 99.8949%
+Source Step = 99.9393%
+Source Step = 99.9837%
+vernier = 0.00219727
+Source stepping succeeded in finding the operating point.
+
+
+Date: Fri Mar 08 12:45:30 2019
+Total elapsed time: 3.371 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 17952
+traniter = 905
+tranpoints = 449
+accept = 398
+rejected = 51
+matrix size = 57
+fillins = 323
+solver = Normal
+Matrix Compiler1: 29.28 KB object code size  4.9/2.4/[1.3]
+Matrix Compiler2: 10.41 KB object code size  3.6/3.8/[0.8]
+
