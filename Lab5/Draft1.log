@@ -1,46 +1,46 @@
-Circuit: * C:\Users\PC\Dropbox\ELEC3400 LTSpice\Lab4\Draft1.asc
+Circuit: * C:\Users\nick\Downloads\ELEC3400\LTSpice\Lab5\Draft1.asc
 
-Early termination of direct N-R iteration.
-Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
-Starting Gmin stepping
-Gmin = 10
-vernier = 0.5
-vernier = 0.25
-vernier = 0.125
-Gmin = 5.5165
-vernier = 0.0625
-vernier = 0.03125
-vernier = 0.015625
-vernier = 0.0078125
-Gmin = 5.49501
-vernier = 0.00390625
-vernier = 0.00195313
-vernier = 0.000976563
-vernier = 0.000488281
-Gmin = 5.50104
-Gmin = 0
-Gmin stepping failed
-
-Starting source stepping with srcstepmethod=0
-Source Step = 3.0303%
-Source Step = 33.3333%
-Source Step = 63.6364%
-Source Step = 93.9394%
-Source stepping succeeded in finding the operating point.
+WARNING: Less than two connections to node N003.  This node is used by V3.
+WARNING: Less than two connections to node NC_01.  This node is used by R3.
+WARNING: Less than two connections to node NC_02.  This node is used by R4.
+V3: Missing value, assumed 0V @ DC
+Direct Newton iteration for .op point succeeded.
+Semiconductor Device Operating Points:
+                        --- Bipolar Transistors ---
+Name:       q5          q4          q3          q1          q2
+Model:    bc547b      bc547b      bc547b      bc547b      bc547b
+Ib:       1.50e-06    1.67e-06    3.10e-06    3.72e-06    3.72e-06
+Ic:       5.27e-04    5.24e-04    1.05e-03    1.06e-03    1.05e-03
+Vbe:      6.16e-01    6.19e-01    6.36e-01    6.40e-01    6.40e-01
+Vbc:     -1.50e+01   -6.62e+00   -1.26e+01   -6.36e-01    0.00e+00
+Vce:      1.56e+01    7.23e+00    1.32e+01    1.28e+00    6.40e-01
+BetaDC:   3.52e+02    3.13e+02    3.40e+02    2.85e+02    2.82e+02
+Gm:       2.01e-02    2.00e-02    4.01e-02    4.03e-02    3.99e-02
+Rpi:      1.75e+04    1.56e+04    8.44e+03    7.03e+03    7.03e+03
+Rx:       1.00e+00    1.00e+00    1.00e+00    1.00e+00    1.00e+00
+Ro:       1.45e+05    1.30e+05    7.04e+04    5.87e+04    5.87e+04
+Cbe:      4.46e-11    4.56e-11    6.17e-11    6.40e-11    6.38e-11
+Cbc:      7.85e-13    9.90e-13    8.26e-13    1.74e-12    2.31e-12
+Cjs:      0.00e+00    0.00e+00    0.00e+00    0.00e+00    0.00e+00
+BetaAC:   3.52e+02    3.13e+02    3.39e+02    2.83e+02    2.80e+02
+Cbx:      4.82e-13    6.09e-13    5.07e-13    1.07e-12    1.42e-12
+Ft:       6.99e+07    6.75e+07    1.01e+08    9.61e+07    9.41e+07
 
 
-Date: Fri Mar 29 17:25:24 2019
-Total elapsed time: 3.828 seconds.
+
+Date: Thu Apr 29 16:18:58 2021
+Total elapsed time: 0.685 seconds.
 
 tnom = 27
 temp = 27
-method = modified trap
-totiter = 2240
-traniter = 556
-tranpoints = 279
-accept = 279
+method = trap
+totiter = 7
+traniter = 0
+tranpoints = 0
+accept = 0
 rejected = 0
-matrix size = 150
-fillins = 1699
+matrix size = 35
+fillins = 6
 solver = Normal
-
+Matrix Compiler1: 2.57 KB object code size
+Matrix Compiler2: 3.02 KB object code size
