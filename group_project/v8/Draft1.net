@@ -1,0 +1,65 @@
+* C:\Users\nick\Downloads\ELEC3400\ltspice\group_project\v8\Draft1.asc
+V1 -Vcc 0 -12
+V2 +Vcc 0 12
+V3 P001 0 SINE(0 10m 1000 0 0) AC 1m
+R1 P001 Vin+ 1
+M1 +Vcc N005 N015 N015 BS170
+R2 +Vcc N005 2000k
+R3 N005 -Vcc 666k
+R4 N015 -Vcc 1k
+Q1 N005 N013 N018 0 BC547B
+R5 +Vcc N005 1000
+R6 N018 -Vcc 200
+R7 N013 -Vcc 666k
+R8 +Vcc N013 2000k
+M2 N014 Vin+ N019 N019 BS170
+R9 +Vcc N011 12k
+R10 +Vcc N014 12k
+M3 N011 Vin- N020 N020 BS170
+C1 N013 N012 1µ
+M4 +Vcc N002 N006 N006 BS170
+R11 +Vcc N002 2000k
+R12 N002 -Vcc 666k
+R13 N006 -Vcc 1k
+Q2 N002 N010 N017 0 BC547B
+R14 +Vcc N002 1000
+R15 N017 -Vcc 200
+R16 N010 -Vcc 666k
+R17 +Vcc N010 2000k
+R18 I_ee1 N019 1k
+R19 N020 I_ee1 1k
+Q3 N022 N022 -Vcc 0 BC547B
+Q4 N021 N022 -Vcc 0 BC547B
+Q5 I_ee1 N021 N022 0 BC547B
+R20 +Vcc N021 22k
+C2 N009 N015 1µ
+C3 N007 N006 1µ
+C4 N012 N011 1µ
+C5 N010 N009 1µ
+C6 N008 N007 1µ
+M5 +Vcc N001 N003 N003 BS170
+R21 +Vcc N001 2000k
+R22 N001 -Vcc 666k
+R23 N003 -Vcc 1k
+Q6 N001 N008 N016 0 BC547B
+R24 +Vcc N001 400
+R25 N016 -Vcc 200
+R26 N008 -Vcc 2000k
+R27 +Vcc N008 1000k
+C7 N004 N003 1µ
+C8 Vout N004 1µ
+R28 NC_01 Vin- 10k
+R29 Vin- 0 1k
+.model NPN NPN
+.model PNP PNP
+.lib C:\Users\nick\Documents\LTspiceXVII\lib\cmp\standard.bjt
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\Users\nick\Documents\LTspiceXVII\lib\cmp\standard.mos
+;tran 0 .01 0 0.01
+.model BS170 VDMOS VTO=2.33 RG=270 RS=1.572 RD=1.436 RB=.768 KP=0.08 W=1 L=1 Cgdmax=20p Cgdmin=3p CGS=28p Cjo=35p Rds=1.2E8 IS=5p Bv=60 Ibv=10u Tt=161.6n
+.ac dec 10 1 500k
+.step oct param R 1k 100k 1
+.op
+.backanno
+.end
