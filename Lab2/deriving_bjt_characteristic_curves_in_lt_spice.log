@@ -1,4 +1,4 @@
-Circuit: * C:\Users\nick\Downloads\LTSpice\Lab2\deriving_bjt_characteristic_curves_in_lt_spice.asc
+Circuit: * C:\Users\nick\Downloads\ELEC3400\ltspice\Lab2\deriving_bjt_characteristic_curves_in_lt_spice.asc
 
 .OP point found by inspection.
 .step v1=0
@@ -8,8 +8,8 @@ Circuit: * C:\Users\nick\Downloads\LTSpice\Lab2\deriving_bjt_characteristic_curv
 .step v1=8
 .step v1=10
 
-Date: Thu Mar 11 06:24:00 2021
-Total elapsed time: 0.047 seconds.
+Date: Wed May 19 09:39:18 2021
+Total elapsed time: 0.138 seconds.
 
 tnom = 27
 temp = 27
@@ -19,9 +19,9 @@ traniter = 0
 tranpoints = 0
 accept = 0
 rejected = 0
-matrix size = 9
+matrix size = 11
 fillins = 0
 solver = Normal
-Matrix Compiler1: 456 bytes object code size  0.2/0.1/[0.1]
-Matrix Compiler2: 667 bytes object code size  0.1/0.1/[0.0]
+Matrix Compiler1: 502 bytes object code size  0.7/0.3/[0.2]
+Matrix Compiler2: 779 bytes object code size  0.4/0.4/[0.1]
 

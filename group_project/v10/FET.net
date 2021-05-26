@@ -1,0 +1,21 @@
+* C:\Users\nick\Downloads\ELEC3400\ltspice\group_project\v10\FET.asc
+V1 -Vcc 0 -12
+V2 +Vcc 0 12
+V3 P001 0 SINE(0 1m 1000 0 0) AC 1m
+R1 P001 Vin+ 1
+M1 +Vcc N001 N002 N002 BS170
+R2 +Vcc N001 1Meg
+R3 N001 -Vcc 1.6Meg
+R4 N002 -Vcc 1.2k
+C8 Vout N002 1µ
+C1 N001 Vin+ 1µ
+R5 NC_01 0 110
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\Users\nick\Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 0 0.01 0 0.001
+.model BS170 VDMOS VTO=2.33 RG=270 RS=1.572 RD=1.436 RB=.768 KP=0.08 W=1 L=1 Cgdmax=20p Cgdmin=3p CGS=28p Cjo=35p Rds=1.2E8 IS=5p Bv=60 Ibv=10u Tt=161.6n
+;.ac dec 10 1 100k
+* Z_in > 500k\nZ_out ~ 100 (measured)\nV_ds = 12 volts\nI_d = 10m
+.backanno
+.end
