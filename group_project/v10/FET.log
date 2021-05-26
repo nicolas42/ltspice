@@ -1,26 +1,22 @@
 Circuit: * C:\Users\nick\Downloads\ELEC3400\ltspice\group_project\v10\FET.asc
 
 Warning: Multiple definitions of model "aons66402" Type: Vdmos1
-WARNING: Node VOUT is floating.
-
-WARNING: Less than two connections to node VOUT.  This node is used by C8.
-WARNING: Less than two connections to node NC_01.  This node is used by R5.
 Direct Newton iteration for .op point succeeded.
 
-Date: Wed May 26 09:19:48 2021
-Total elapsed time: 0.215 seconds.
+Date: Wed May 26 12:41:21 2021
+Total elapsed time: 0.238 seconds.
 
 tnom = 27
 temp = 27
 method = modified trap
-totiter = 836
-traniter = 830
-tranpoints = 416
-accept = 258
-rejected = 158
-matrix size = 15
+totiter = 814
+traniter = 806
+tranpoints = 404
+accept = 267
+rejected = 137
+matrix size = 14
 fillins = 0
 solver = Normal
-Matrix Compiler1: 658 bytes object code size  0.1/0.2/[0.1]
-Matrix Compiler2: off  [0.1]/0.1/0.1
+Matrix Compiler1: 590 bytes object code size  0.3/0.2/[0.2]
+Matrix Compiler2: 1018 bytes object code size  0.2/0.3/[0.2]
 
